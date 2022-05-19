@@ -23,7 +23,7 @@ import java.awt.BasicStroke;
        Ball ball;
        Paddle paddle1, paddle2;
        
-       private final static int POINTS_TO_WIN = 3;
+       private final static int POINTS_TO_WIN = 10;
        int player1Score = 0, player2Score = 0;
        Player gameWinner;
        
@@ -127,7 +127,7 @@ import java.awt.BasicStroke;
           Graphics2D g2d = (Graphics2D) g.create();
               Stroke dashed = new BasicStroke(3, BasicStroke.CAP_BUTT, BasicStroke.JOIN_BEVEL, 0, new float[]{9}, 0);
               g2d.setStroke(dashed);
-              g2d.setPaint(Color.WHITE);
+              g2d.setPaint(Color.YELLOW);
               g2d.drawLine(getWidth() / 2, 0, getWidth() / 2, getHeight());
               g2d.dispose();
        }
